@@ -13,7 +13,7 @@ Events:Subscribe('GunSway:UpdateRecoil', function(gunSway, soldierWeapon, weapon
 		return
 	end
 
-	-- soldierWeapon is a DataContainer, we cast it to its type (SoldierWeapon) so we can access its fields. 
+	-- soldierWeapon is an entity, we cast it to its type (SoldierWeapon) so we can access its fields. 
 	local weapon = SoldierWeapon(soldierWeapon)
 
 	-- Get the aiming simulation.
